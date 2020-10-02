@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sJh-Ak-2aK" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
+                                <rect key="frame" x="58" y="88" width="88" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="88" id="D9Z-Jk-RWs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="58B-yt-Vtv" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
+                                <rect key="frame" x="83" y="235" width="88" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="58B-yt-Vtv" secondAttribute="height" multiplier="5:8" id="bv6-MN-Uwa"/>
+                                    <constraint firstAttribute="width" priority="750" constant="88" id="hGE-6q-JQg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="znT-Vj-D1K" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
+                                <rect key="frame" x="199" y="177" width="88" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="znT-Vj-D1K" secondAttribute="height" multiplier="5:8" id="Di9-rT-kKR"/>
+                                    <constraint firstAttribute="width" priority="750" constant="88" id="g2b-g7-lqk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="hX2-8Z-NcB" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
+                                <rect key="frame" x="83" y="473" width="88" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="88" id="Vja-WU-B18"/>
+                                    <constraint firstAttribute="width" secondItem="hX2-8Z-NcB" secondAttribute="height" multiplier="5:8" id="w2A-1w-n6o"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CqS-Fi-NaB" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
+                                <rect key="frame" x="269" y="403" width="88" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CqS-Fi-NaB" secondAttribute="height" multiplier="5:8" id="K3E-je-N8C"/>
+                                    <constraint firstAttribute="width" priority="750" constant="88" id="gkp-uZ-M5E"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lVt-rS-sUm" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
+                                <rect key="frame" x="224" y="609" width="88" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="88" id="1oF-3j-o9e"/>
+                                    <constraint firstAttribute="width" secondItem="lVt-rS-sUm" secondAttribute="height" multiplier="5:8" id="YPw-Ws-Gbo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hX2-8Z-NcB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="429" id="2Vj-tV-yx7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="58B-yt-Vtv" secondAttribute="trailing" constant="243" id="5mM-aH-lKr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CqS-Fi-NaB" secondAttribute="trailing" constant="57" id="63k-kh-GBj"/>
+                            <constraint firstItem="znT-Vj-D1K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="199" id="8fa-4L-HD5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="58B-yt-Vtv" secondAttribute="bottom" constant="486" id="A0M-R8-e0P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="znT-Vj-D1K" secondAttribute="trailing" constant="127" id="Cct-o2-8Ur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sJh-Ak-2aK" secondAttribute="trailing" constant="268" id="Cnf-ta-ejL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lVt-rS-sUm" secondAttribute="bottom" constant="112" id="PEu-4A-ieT"/>
+                            <constraint firstItem="lVt-rS-sUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="224" id="Q2k-Gk-xqx"/>
+                            <constraint firstItem="znT-Vj-D1K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="Qf3-hx-FEW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CqS-Fi-NaB" secondAttribute="bottom" constant="318" id="Sog-No-fVi"/>
+                            <constraint firstItem="58B-yt-Vtv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="VvP-hj-4Zb"/>
+                            <constraint firstItem="sJh-Ak-2aK" firstAttribute="width" secondItem="sJh-Ak-2aK" secondAttribute="height" multiplier="5:8" id="YxI-ll-juu"/>
+                            <constraint firstItem="znT-Vj-D1K" firstAttribute="leading" secondItem="58B-yt-Vtv" secondAttribute="trailing" constant="28" id="Zu5-hZ-MNz"/>
+                            <constraint firstItem="sJh-Ak-2aK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="awn-jF-tgq"/>
+                            <constraint firstItem="CqS-Fi-NaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="359" id="ggm-Bf-Kcg"/>
+                            <constraint firstItem="lVt-rS-sUm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="565" id="k8D-AY-dRj"/>
+                            <constraint firstItem="hX2-8Z-NcB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="pSw-Ld-bc3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lVt-rS-sUm" secondAttribute="trailing" constant="102" id="ryv-cg-G57"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hX2-8Z-NcB" secondAttribute="bottom" constant="248" id="tdK-oZ-cf8"/>
+                            <constraint firstItem="lVt-rS-sUm" firstAttribute="width" secondItem="lVt-rS-sUm" secondAttribute="height" multiplier="5:8" id="xBU-g4-mIP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="cardViews" destination="sJh-Ak-2aK" collectionClass="NSMutableArray" id="kBn-X3-rsi"/>
+                        <outletCollection property="cardViews" destination="58B-yt-Vtv" collectionClass="NSMutableArray" id="rmT-5B-v3Z"/>
+                        <outletCollection property="cardViews" destination="znT-Vj-D1K" collectionClass="NSMutableArray" id="1G1-Hx-ofw"/>
+                        <outletCollection property="cardViews" destination="hX2-8Z-NcB" collectionClass="NSMutableArray" id="wBt-B5-mT4"/>
+                        <outletCollection property="cardViews" destination="CqS-Fi-NaB" collectionClass="NSMutableArray" id="Yqw-RU-Qry"/>
+                        <outletCollection property="cardViews" destination="lVt-rS-sUm" collectionClass="NSMutableArray" id="Dw3-nj-Dvt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
     </scenes>
 </document>
